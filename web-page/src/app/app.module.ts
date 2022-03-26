@@ -12,7 +12,7 @@ import { ListProductComponent } from './list-product/list-product.component';
 
 const root: Routes=[
   
-  {path:'', component:RegisterDataComponent},
+  {path:'main', component:RegisterDataComponent},
   {path:'update', component:UpdateDataComponent},
   {path:'list', component:ListProductComponent}
 ];
