@@ -7,46 +7,46 @@
         <app-sidebar></app-sidebar>
     
       <div class="container p-5 my-5 ">
-        <h2>Registrar Familia de Productos</h2>
+        <h2>Actualizar Datos</h2>
         <div class="grid">
-        <form>
+            <form class="was-validated">
           
-          <div class="row mb-3">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Usuario</label>
-            <div class="col-sm-2">
-              <input type="email" class="form-control" id="inputEmail3">
-            </div>
-          </div>
-          <div class="row mb-3">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Nombre</label>
-            <div class="col-sm-2">
-              <input type="password" class="form-control" id="inputPassword3">
-            </div>
-          </div>
-          <div class="row mb-3">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Apellido</label>
-            <div class="col-sm-2">
-              <input type="password" class="form-control" id="inputPassword3">
-            </div>
-          </div>
-          <div class="row mb-3">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
-            <div class="col-sm-2">
-              <input type="password" class="form-control" id="inputPassword3">
-            </div>
-          </div>
-          <div class="row mb-3">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
-            <div class="col-sm-2">
-              <input type="password" class="form-control" id="inputPassword3">
-            </div>
-          </div>
-          <div class="row mb-3">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Rol</label>
-            <div class="col-sm-2">
-              <input type="password" class="form-control" id="inputPassword3">
-            </div>
-          </div>
+                <div class="row mb-3">
+                  <label for="uname" class="col-sm-2 col-form-label">Usuario</label>
+                  <div class="col-sm-2">
+                    <input type="text" class="form-control" id="uname" placeholder="Ingrese Usuario" name="uname" required >
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="name" class="col-sm-2 col-form-label">Nombre</label>
+                  <div class="col-sm-2">
+                    <input type="text" class="form-control" id="name" placeholder="Ingrese Nombre" name="name" required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="ape" class="col-sm-2 col-form-label">Apellido</label>
+                  <div class="col-sm-2">
+                    <input type="text" class="form-control" id="ape" placeholder="Ingrese Apellido" name="ape" required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="pwd" class="col-sm-2 col-form-label">Contraseña</label>
+                  <div class="col-sm-2">
+                    <input type="password" class="form-control" id="pwd" placeholder="Ingrese Contraseña" name="pwd" required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="dateb" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
+                  <div class="col-sm-2">
+                    <input type="date" class="form-control" id="dateb" placeholder="Ingrese Fecha" name="dateb" required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="rol" class="col-sm-2 col-form-label">Rol</label>
+                  <div class="col-sm-2">
+                    <input type="text" class="form-control" id="rol" placeholder="Ingrese Rol" name="rol" required>
+                  </div>
+                </div>
     
             <button class="btn btn-secondary mr-1" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Guardar Cambios</button>
             <button class="btn btn-outline-secondary" type="button">Cancelar</button>

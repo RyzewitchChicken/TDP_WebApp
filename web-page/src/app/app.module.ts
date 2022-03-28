@@ -37,7 +37,7 @@ const root: Routes=[
   {path:'users', component:UserComponent},
   {path:'registerUsers',component:RegistrarUserComponent},
   {path:'modifyUsers',component:ModificarUserComponent},
-  {path:'camiones?', component:CamionesComponent},
+  {path:'camiones', component:CamionesComponent},
   {path:'registerCamiones',component:RegistrarCamionesComponent},
   {path:'modifyCamiones',component:ModificarCamionesComponent},
   {path:'login', component:LoginComponent}

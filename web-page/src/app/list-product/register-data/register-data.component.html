@@ -9,30 +9,31 @@
       <div class="container p-5 my-5 ">
         <h2>Registrar Familia de Productos</h2>
         <div class="grid">
-        <form>
+        <form class="was-validated">
           
           <div class="row mb-3">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre</label>
+            <label for="uname" class="col-sm-2 col-form-label">Nombre</label>
             <div class="col-sm-2">
-              <input type="email" class="form-control" id="inputEmail3">
+              <input type="text" class="form-control" id="uname" placeholder="Ingrese nombre" name="uname" required>
+              <div class="invalid-feedback">Rellene este campo</div>
             </div>
           </div>
           <div class="row mb-3">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Temperatura</label>
+            <label for="temp" class="col-sm-2 col-form-label">Temperatura</label>
             <div class="col-sm-2">
-              <input type="password" class="form-control" id="inputPassword3">
+              <input type="number" class="form-control" id="temp" placeholder="Ingrese Temperatura" name="temp" required>
             </div>
           </div>
           <div class="row mb-3">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Humedad()</label>
+            <label for="hume" class="col-sm-2 col-form-label">Humedad()</label>
             <div class="col-sm-2">
-              <input type="password" class="form-control" id="inputPassword3">
+              <input type="number" class="form-control" id="hume" placeholder="Ingrese Humedad" name="hume" required>
             </div>
           </div>
           <div class="row mb-3">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Velocidad</label>
+            <label for="velo" class="col-sm-2 col-form-label">Velocidad</label>
             <div class="col-sm-2">
-              <input type="password" class="form-control" id="inputPassword3">
+              <input type="number" class="form-control" id="velo" placeholder="Ingrese Velocidad" name="velo" required>
             </div>
           </div>
     
