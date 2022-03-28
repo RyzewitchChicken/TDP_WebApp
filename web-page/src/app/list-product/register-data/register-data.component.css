@@ -34,7 +34,7 @@ body {
       color: white;
   }
   .btn {
-      color: white;
+      color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important
   }
 
 .modal-body  {

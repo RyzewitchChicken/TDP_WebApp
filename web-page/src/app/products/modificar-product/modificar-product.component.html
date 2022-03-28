@@ -1,0 +1,69 @@
+
+  <body>
+    
+    
+
+    <main>
+        <app-sidebar></app-sidebar>
+    
+      <div class="container p-5 my-5 ">
+        <h2>Registrar Producto</h2>
+        <div class="grid">
+        <form>
+          
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-2">
+              <input type="email" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Descripcion</label>
+            <div class="col-sm-2">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Familia de Producto</label> 
+            <div class="col-sm-2">
+              
+            <select class="form-select" aria-label="Default select example">
+                
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            </div>
+        </div>
+
+    
+            <button class="btn btn-secondary mr-1" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Modificar Cambios</button>
+            <button class="btn btn-outline-secondary" type="button">Cancelar</button>
+            <!-- Button trigger modal -->
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Actualizacion Exitoso</h4>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+    
+        </form>
+      </div>
+      </div>
+    
+    </main>
+    
+      </body>
+    
+    

@@ -20,8 +20,6 @@ body {
   }
   .container h2 {
       text-align: center;
-      color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
-      
   }
   .grid {
       padding-top: 50px;
@@ -36,11 +34,10 @@ body {
       color: white;
   }
   .btn {
-      color: white;
+    color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
   }
 
-  .table {
-      color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
-      margin-top: 40px;
-      border-color:  rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;;
-  }
+  .modal-body  {
+    color: black;
+    text-align: center;
+}  

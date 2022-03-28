@@ -3,51 +3,71 @@
       
     
       <div class="sideb" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          <span class="fs-4">LogiApp</span>
-        </a>
+        <img src="/assets/logiApp-logos_white.png" class="rounded" alt="Cinque Terre">
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
 
             <li class="nav-item">
-                  <a class="btn" data-bs-toggle="collapse"  class="nav-link active" aria-current="page"  aria-expanded="false" href="#collapseOne">
+                  <a class="btn" class="prodref" data-bs-toggle="collapse"  class="nav-link active" aria-current="page"  aria-expanded="false" href="#collapseOne">
                     Familia de Productos
                   </a>
                 <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="/main" class="nav-link text-white">Registro</a></li>
-                        <li><a href="/update" class="nav-link text-white">Actualización</a></li>
-                        <li><a href="/list" class="nav-link text-white">Listado</a></li>
+                        <li><a href="" class="nav-link text-white">Registro</a></li>
+                        <li><a href="/updateFmProducts" class="nav-link text-white">Actualización</a></li>
+                        <li><a href="/listFmProducts" class="nav-link text-white">Listado</a></li>
                       </ul>
                 </div>
             </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              
+          <li class="nav-item">
+            <a class="btn" class="prodref" data-bs-toggle="collapse"  class="nav-link text-white" aria-current="page"  aria-expanded="false" href="#collapseTwo">
               Productos
             </a>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion" >
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="/products" class="nav-link text-white">Listado</a></li>
+                  <li><a href="/registerProducts" class="nav-link text-white">Registro</a></li>
+                  <li><a href="/modifyProducts" class="nav-link text-white">Modificar</a></li>
+                </ul>
+          </div>
           </li>
-          <li>
-            <a href="#" class="nav-link text-white">
+          <li class="nav-item">
+            <a class="btn" class="prodref" data-bs-toggle="collapse"  class="nav-link text-white" aria-current="page"  aria-expanded="false" href="#collapseThree">
               Camiones
             </a>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion" >
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="/camiones?" class="nav-link text-white">Listado</a></li>
+                  <li><a href="/registerCamiones" class="nav-link text-white">Registro</a></li>
+                  <li><a href="/modifyCamiones" class="nav-link text-white">Modificar</a></li>
+                </ul>
+          </div>
           </li>
-          <li>
-            <a href="#" class="nav-link text-white">
+          <li class="nav-item">
+            <a class="btn" class="prodref" data-bs-toggle="collapse"  class="nav-link text-white" aria-current="page"  aria-expanded="false" href="#collapseFour">
               Roles
             </a>
+          <div id="collapseFour" class="collapse" data-bs-parent="#accordion" >
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="/roles" class="nav-link text-white">Listado</a></li>
+                  <li><a href="/registerRoles" class="nav-link text-white">Registro</a></li>
+                  <li><a href="/modifyRoles" class="nav-link text-white">Modificar</a></li>
+                </ul>
+          </div>
           </li>
           <li>
-            <a href="#" class="nav-link text-white">
-              Personas
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
+            <a class="btn" class="prodref" data-bs-toggle="collapse"  class="nav-link text-white" aria-current="page"  aria-expanded="false" href="#collapseFive">
               Usuarios
             </a>
+          <div id="collapseFive" class="collapse" data-bs-parent="#accordion" >
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="/users" class="nav-link text-white">Listado</a></li>
+                  <li><a href="/registerUsers" class="nav-link text-white">Registro</a></li>
+                  <li><a href="/modifyUsers" class="nav-link text-white">Modificar</a></li>
+                </ul>
+          </div>
           </li>
+
         </ul>
         <hr>
         <div class="dropdown">

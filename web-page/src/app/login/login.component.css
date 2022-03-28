@@ -37,7 +37,20 @@ body {
       color: white;
   }
 
-  .modal-body  {
-    color: black;
-    text-align: center;
-}  
+  .nav-link.active{
+    background-color: #cccccc !important;
+    color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    }
+
+.card {
+   background-color: #cccccc;
+   border-color:  rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+   border-width: 10px;
+   color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}    
+
+img {
+    position: relative;
+    width: 100%;
+}
+
