@@ -9,30 +9,30 @@
       <div class="container p-5 my-5 ">
         <h2>Registrar Camión</h2>
         <div class="grid">
-        <form class="was-validated">
+        <form class="was-validated" [formGroup]="registerCamiones" (ngSubmit)="AgregarCamion()">
           
           <div class="row mb-3">
             <label for="pla" class="col-sm-2 col-form-label">Placa</label>
             <div class="col-sm-2">
-              <input type="text" class="form-control" id="pla" placeholder="Ingrese Placa" name="pla" required>
+              <input type="text" class="form-control" formControlName="placa" id="pla" placeholder="Ingrese Placa" name="pla" required>
             </div>
           </div>
           <div class="row mb-3">
             <label for="marc" class="col-sm-2 col-form-label">Marca</label>
             <div class="col-sm-2">
-                <input type="text" class="form-control" id="marc" placeholder="Ingrese Nombre" name="marc" required>
+                <input type="text" class="form-control" formControlName="marca" id="marc" placeholder="Ingrese Nombre" name="marc" required>
             </div>
           </div>
           <div class="row mb-3">
             <label for="pho" class="col-sm-2 col-form-label">Foto Camión</label>
             <div class="col-sm-5">
-                <input type="file" class="form-control" id="pho"  name="pho" required>
+                <input type="file" class="form-control" formControlName="foto" id="pho" name="pho" required>
             </div>
           </div>
 
 
     
-            <button class="btn btn-secondary mr-1" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Registrar</button>
+            <button class="btn btn-secondary mr-1"  type="submit">Registrar</button>
             <button class="btn btn-outline-secondary" type="button">Cancelar</button>
             <!-- Button trigger modal -->
             

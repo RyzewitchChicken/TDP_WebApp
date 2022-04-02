@@ -1,0 +1,50 @@
+
+  <body>
+    
+    
+
+    <main>
+        <app-sidebar></app-sidebar>
+    
+      <div class="container p-5 my-5 ">
+        <h2>Actualizar Datos</h2>
+        <div class="grid">
+        <form class="was-validated" [formGroup]="registerRol" (ngSubmit)="editRol()">
+          
+          <div class="row mb-3">
+            <label for="name" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" formControlName="nombre" id="name" placeholder="Ingrese Nombre" name="name" required>
+            </div>
+          </div>
+
+    
+            <button class="btn btn-secondary mr-1"  type="submit" >Registrar</button>
+            <button class="btn btn-outline-secondary" type="button">Cancelar</button>
+            <!-- Button trigger modal -->
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Registro Exitoso</h4>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+    
+        </form>
+      </div>
+      </div>
+    
+    </main>
+    
+      </body>
+    
+    

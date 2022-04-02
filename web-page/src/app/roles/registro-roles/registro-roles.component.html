@@ -7,19 +7,19 @@
         <app-sidebar></app-sidebar>
     
       <div class="container p-5 my-5 ">
-        <h2>Registrar Rol</h2>
+        <h2>{{titulo}}</h2>
         <div class="grid">
-        <form class="was-validated">
+        <form class="was-validated" [formGroup]="registerRol" (ngSubmit)="AgregarRol()">
           
           <div class="row mb-3">
             <label for="name" class="col-sm-2 col-form-label">Nombre</label>
             <div class="col-sm-2">
-              <input type="text" class="form-control" id="name" placeholder="Ingrese Nombre" name="name" required>
+              <input type="text" class="form-control" formControlName="nombre" id="name" placeholder="Ingrese Nombre" name="name" required>
             </div>
           </div>
 
     
-            <button class="btn btn-secondary mr-1" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Registrar</button>
+            <button class="btn btn-secondary mr-1"  type="submit" >Registrar</button>
             <button class="btn btn-outline-secondary" type="button">Cancelar</button>
             <!-- Button trigger modal -->
             

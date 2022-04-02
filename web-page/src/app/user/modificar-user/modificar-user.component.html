@@ -9,46 +9,52 @@
       <div class="container p-5 my-5 ">
         <h2>Actualizar Datos</h2>
         <div class="grid">
-            <form class="was-validated">
+        <form class="was-validated" [formGroup]="registeruser" (ngSubmit)="editRol()">
           
-                <div class="row mb-3">
-                  <label for="uname" class="col-sm-2 col-form-label">Usuario</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" id="uname" placeholder="Ingrese Usuario" name="uname" required >
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="name" class="col-sm-2 col-form-label">Nombre</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" id="name" placeholder="Ingrese Nombre" name="name" required>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="ape" class="col-sm-2 col-form-label">Apellido</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" id="ape" placeholder="Ingrese Apellido" name="ape" required>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="pwd" class="col-sm-2 col-form-label">Contraseña</label>
-                  <div class="col-sm-2">
-                    <input type="password" class="form-control" id="pwd" placeholder="Ingrese Contraseña" name="pwd" required>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="dateb" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
-                  <div class="col-sm-2">
-                    <input type="date" class="form-control" id="dateb" placeholder="Ingrese Fecha" name="dateb" required>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="rol" class="col-sm-2 col-form-label">Rol</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" id="rol" placeholder="Ingrese Rol" name="rol" required>
-                  </div>
-                </div>
+          <div class="row mb-3">
+            <label for="uname" class="col-sm-2 col-form-label">Usuario</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" formControlName="username" id="uname" placeholder="Ingrese Usuario" name="uname" required >
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="name" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" formControlName="name" id="name" placeholder="Ingrese Nombre" name="name" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="ape" class="col-sm-2 col-form-label">Apellido</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" formControlName="lastname" id="ape" placeholder="Ingrese Apellido" name="ape" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="pwd" class="col-sm-2 col-form-label">Contraseña</label>
+            <div class="col-sm-2">
+              <input type="password" class="form-control" formControlName="password" id="pwd" placeholder="Ingrese Contraseña" name="pwd" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="dateb" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
+            <div class="col-sm-2">
+              <input type="date" class="form-control" formControlName="birthdate" id="dateb" placeholder="Ingrese Fecha" name="dateb" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="sel" class="col-sm-2 col-form-label">Rol</label> 
+            <div class="col-sm-2">
+              
+            <select formControlName="rol" class="form-select" aria-label="Default select example" id="sel" name="sel" required>
+                
+                <option selected></option>
+                <option *ngFor="let rol of roles" [value]="rol.nombre" >{{rol.nombre}}</option>
+
+            </select>
+            </div>
+        </div>
     
-            <button class="btn btn-secondary mr-1" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Guardar Cambios</button>
+            <button class="btn btn-secondary mr-1"  type="submit">Modificar</button>
             <button class="btn btn-outline-secondary" type="button">Cancelar</button>
             <!-- Button trigger modal -->
             
@@ -61,7 +67,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h4>Actualizacion Exitosa</h4>
+                        <h4>Actualizacion Exitoso</h4>
                     </div>
 
                 </div>
